@@ -8,4 +8,6 @@ streamlit==1.12.0
 opencv-python-headless==4.5.3.56
 Pillow==9.2.0
 pytesseract==0.3.10
+pywhatkit==5.4
+streamlit-option-menu==0.3.2
 
