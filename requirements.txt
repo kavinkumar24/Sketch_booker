@@ -4,6 +4,7 @@ fonttools==4.38.0
 kiwisolver==1.4.4
 numpy==1.23.4
 packaging==21.3
+streamlit==0.80.0
 Pillow==9.2.0
 pyparsing==3.0.9
 pytesseract==0.3.10
