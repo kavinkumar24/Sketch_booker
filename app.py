@@ -4,7 +4,6 @@ import cv2 #for image processing
 import numpy as np #to store image
 import sys
 import numpy as np
-import matplotlib.pyplot as plt
 import os 
 from PIL import Image
 import streamlit as st
