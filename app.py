@@ -1,5 +1,4 @@
 from distutils.log import error
-from tkinter.tix import NoteBook
 from typing import final
 import cv2 #for image processing
 import numpy as np #to store image
