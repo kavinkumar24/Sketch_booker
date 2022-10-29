@@ -10,7 +10,6 @@ opencv-python-headless==4.5.4.60
 pyparsing==3.0.9
 pytesseract==0.3.10
 six==1.16.0
-opencv_python==3.4.11.39
 
 
 
