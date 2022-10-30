@@ -26,7 +26,7 @@ def cartoon(input_image):
         image_grey = cv2.cvtColor(input_image, cv2.COLOR_BGR2GRAY)
         image_invert = cv2.bitwise_not(image_grey)
         image_smoothing = cv2.GaussianBlur(
-            image_invert, (21, 21), sigmaX=0, sigmaY=0)
+            image_invert, (71, 71), sigmaX=0, sigmaY=0)
         final_image = cv2.divide(image_grey, 255-image_smoothing, scale=256)
         smoothGrayScale = cv2.medianBlur(image_grey, 5)
         ReSized3 = cv2.resize(smoothGrayScale, (960, 540))
