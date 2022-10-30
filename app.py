@@ -8,7 +8,6 @@ import streamlit as st
 from pytesseract import image_to_string
 import pytesseract
 from PIL import UnidentifiedImageError
-from rembg import remove
 
 
 
