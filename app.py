@@ -9,10 +9,6 @@ from pytesseract import image_to_string
 import pytesseract
 from PIL import UnidentifiedImageError
 
-
-
-
-
 def pencilSketch(input_image):
     image_grey = cv2.cvtColor(input_image, cv2.COLOR_BGR2GRAY)
     image_invert = cv2.bitwise_not(image_grey)
@@ -40,7 +36,6 @@ def cartoon(input_image):
         colorImage = cv2.bilateralFilter(input_image, 9, 500, 500)
         ReSized5 = cv2.resize(colorImage, (1060, 840))
         #plt.imshow(ReSized5, cmap='gray')
-
         cartoonImage = cv2.bitwise_and(colorImage, colorImage, mask=getEdge)
         ReSized6 = cv2.resize(cartoonImage, (960, 540))
         #plt.imshow(ReSized6, cmap='gray'
