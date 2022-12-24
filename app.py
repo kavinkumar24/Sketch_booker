@@ -59,12 +59,9 @@ if selected_box == 'Pencil Scatcher':
         st.image(image, use_column_width=True)
         st.write("Output Pencil Photo")
         st.image(final_img, use_column_width=True)
-
-    
-
+        
 if selected_box == 'cartoon Image converter':
     image_cartoon = st.file_uploader("Upload your ", type=['jpeg', 'jpg', 'png'])
-   
     if image_cartoon is None:
         st.title("error")
     else:
@@ -77,5 +74,3 @@ if selected_box == 'cartoon Image converter':
             st.write("Output Pencil Photo")
         except UnidentifiedImageError:
             st.caption('Converted')
-
-
