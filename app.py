@@ -52,7 +52,7 @@ if selected_box == 'Pencil Scatcher':
     image = st.file_uploader("Upload your photo", type=['jpeg', 'jpg', 'png'])
     if image is None:
         st.write("You have not uploaded any image")
-        st.caption("Upload any type of images, but jpg images give better results")
+        st.write("Upload any type of images, but jpg images give better results")
     else:
         input_image = Image.open(image)
         final_img = pencilSketch(np.array(input_image))
