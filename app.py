@@ -64,7 +64,7 @@ if selected_box == 'Pencil Scatcher':
 if selected_box == 'cartoon Image converter':
     image_cartoon = st.file_uploader("Upload your ", type=['jpeg', 'jpg'])
     if image_cartoon is None:
-        st.header("support images oly in jpg")
+        st.header("support images only in jpg")
     else:
         try:
             st.image(image_cartoon)
