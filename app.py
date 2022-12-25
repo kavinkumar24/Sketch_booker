@@ -27,7 +27,6 @@ def cartoon(input_image):
         smoothGrayScale = cv2.medianBlur(image_grey, 5)
         ReSized3 = cv2.resize(smoothGrayScale, (960, 540))
         #plt.imshow(ReSized3, cmap='gray')
-
         getEdge = cv2.adaptiveThreshold(smoothGrayScale, 255, 
         cv2.ADAPTIVE_THRESH_MEAN_C, 
         cv2.THRESH_BINARY, 17, 10)
@@ -41,11 +40,9 @@ def cartoon(input_image):
         #plt.imshow(ReSized6, cmap='gray'
         st.image(cartoonImage)
        
-    
 selected_box = st.sidebar.selectbox(
 'Choose one of the following',
-('Pencil Scatcher','cartoon Image converter')
-)
+('Pencil Scatcher','cartoon Image converter'))
 if selected_box == 'Pencil Scatcher':
     st.title("PencilScatcher App")
     st.write('This web app is to help convert your photos to realistic Pencil Sketches')
