@@ -5,3 +5,4 @@ It is a interested webpage, it is made by streamlit which is a popular framework
   1. You can convert your normal photo into a pencil sketching images 
   2. The second option is a cartoonify images convert your normal photos into => cartoon
   3. for pencil sketching images, the image type either may be a jpg or png => The jpg gives the absolute result
+  4. For the second option, the input images format only in jpg 
