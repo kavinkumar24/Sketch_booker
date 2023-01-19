@@ -10,6 +10,10 @@ import pytesseract
 from PIL import UnidentifiedImageError
 from streamlit_option_menu import option_menu
 
+
+
+st.image('sketch.png',width=300,)
+
 def pencilSketch(input_image):
     image_grey = cv2.cvtColor(input_image, cv2.COLOR_BGR2GRAY)
     image_invert = cv2.bitwise_not(image_grey)
