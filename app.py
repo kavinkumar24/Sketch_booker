@@ -11,7 +11,11 @@ from PIL import UnidentifiedImageError
 from streamlit_option_menu import option_menu
 
 
-
+with st.sidebar:
+    select = option_menu(
+            menu_title="Main Menu",
+            options = ["Pencil Scatcher","cartoon Image converter"],
+            menu_icon="cast")
 
 st.image('sketch.png',width=300,)
 
