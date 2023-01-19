@@ -10,6 +10,29 @@ import pytesseract
 from PIL import UnidentifiedImageError
 from streamlit_option_menu import option_menu
 
+with st.sidebar:
+    select = option_menu(
+            menu_title="Main Menu",
+            options = ["Pencil Scatcher","cartoon Image converter"],
+            menu_icon="cast")
+    page_bg_img = f"""
+        <style>
+        .menu .container-xxl[data-v-4323f8ce]{{
+            background-color:white;
+            color:black; 
+        }} 
+        [data-testid="stSidebar"] {{
+        background-color:#d5e1ed;
+        color:white;    
+        }}
+        </style>
+        """ 
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    base='light'  
+
+st.image('sketch.png',width=300,)
+
+
 def pencilSketch(input_image):
     image_grey = cv2.cvtColor(input_image, cv2.COLOR_BGR2GRAY)
     image_invert = cv2.bitwise_not(image_grey)
@@ -41,7 +64,7 @@ def cartoon(input_image):
         #plt.imshow(ReSized6, cmap='gray'
         st.image(cartoonImage)
        
-selected_box = st.sidebar.selectbox(
+select = st.sidebar.selectbox(
 'Choose one of the following',
 ('Pencil Scatcher','cartoon Image converter'))
 if selected_box == 'Pencil Scatcher':
@@ -59,7 +82,7 @@ if selected_box == 'Pencil Scatcher':
         st.write("Output Pencil Photo")
         st.image(final_img, use_column_width=True)
         
-if selected_box == 'cartoon Image converter':
+if select == 'cartoon Image converter':
     image_cartoon = st.file_uploader("Upload your ", type=['jpeg', 'jpg'])
     if image_cartoon is None:
         st.header("support images only in jpg")
