@@ -10,7 +10,25 @@ import pytesseract
 from PIL import UnidentifiedImageError
 from streamlit_option_menu import option_menu
 
-
+with st.sidebar:
+    select = option_menu(
+            menu_title="Main Menu",
+            options = ["Pencil Scatcher","cartoon Image converter"],
+            menu_icon="cast")
+    page_bg_img = f"""
+        <style>
+        .menu .container-xxl[data-v-4323f8ce]{{
+            background-color:white;
+            color:black; 
+        }} 
+        [data-testid="stSidebar"] {{
+        background-color:#d5e1ed;
+        color:white;    
+        }}
+        </style>
+        """ 
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    base='light'  
 
 st.image('sketch.png',width=300,)
 
