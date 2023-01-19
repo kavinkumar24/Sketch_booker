@@ -64,10 +64,8 @@ def cartoon(input_image):
         #plt.imshow(ReSized6, cmap='gray'
         st.image(cartoonImage)
        
-select = st.sidebar.selectbox(
-'Choose one of the following',
-('Pencil Scatcher','cartoon Image converter'))
-if selected_box == 'Pencil Scatcher':
+
+if select == 'Pencil Scatcher':
     st.title("PencilScatcher App")
     st.write('This web app is to help convert your photos to realistic Pencil Sketches')
     image = st.file_uploader("Upload your photo", type=['jpeg', 'jpg', 'png'])
