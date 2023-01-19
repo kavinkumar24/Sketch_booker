@@ -9,6 +9,7 @@ from pytesseract import image_to_string
 import pytesseract
 from PIL import UnidentifiedImageError
 from streamlit_option_menu import option_menu
+import pyarrow
 
 with st.sidebar:
     select = option_menu(
