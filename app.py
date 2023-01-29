@@ -29,6 +29,7 @@ page_bg_img = f"""
 st.markdown(page_bg_img, unsafe_allow_html=True)
 base='light'  
     
+    
 st.image('sketch.png',width=300)
 
 def pencilSketch(input_image):
