@@ -10,7 +10,6 @@ import pytesseract
 from PIL import UnidentifiedImageError
 from streamlit_option_menu import option_menu
 
-
 with st.sidebar:
     select = option_menu(
             menu_title="Main Menu",
