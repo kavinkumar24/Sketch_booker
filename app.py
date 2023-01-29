@@ -29,7 +29,6 @@ page_bg_img = f"""
 st.markdown(page_bg_img, unsafe_allow_html=True)
 base='light'  
     
-    
 st.image('sketch.png',width=300)
 def pencilSketch(input_image):
     image_grey = cv2.cvtColor(input_image, cv2.COLOR_BGR2GRAY)
