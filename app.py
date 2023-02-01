@@ -76,6 +76,7 @@ if select == 'Pencil Scatcher':
         st.write("Output Pencil Photo")
         st.image(final_img, use_column_width=True)
         
+        
 if select == 'cartoon Image converter':
     image_cartoon = st.file_uploader("Upload your ", type=['jpeg', 'jpg'])
     if image_cartoon is None:
