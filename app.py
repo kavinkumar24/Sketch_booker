@@ -4,7 +4,7 @@ import cv2 #for image processing
 import numpy as np #to store image
 import sys
 from PIL import Image
-import streamlit as st
+import streamlit as st 
 from pytesseract import image_to_string
 import pytesseract
 from PIL import UnidentifiedImageError
