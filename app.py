@@ -23,7 +23,7 @@ page_bg_img = f"""
         [data-testid="stSidebar"] {{
         background-color:#d5e1ed;
         color:white;    
-        }}
+        }} 
         </style>
         """ 
 st.markdown(page_bg_img, unsafe_allow_html=True)
