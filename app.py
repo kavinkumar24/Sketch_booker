@@ -2,7 +2,7 @@ from distutils.log import error
 from typing import final 
 import cv2 #for image processing 
 import numpy as np #to store image
-import sys
+import sys 
 from PIL import Image
 import streamlit as st 
 from pytesseract import image_to_string
